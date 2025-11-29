@@ -1,111 +1,47 @@
 <!DOCTYPE html>
 <html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <title>Moja prva stranica – Header</title>
-    <style>
-        /* 1. Reset osnovnih margina i paddinga za sve elemente */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* 2. Osnovni stil za cijelu stranicu */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-/* 3. Header dio stranice */
-header {
-    background-color: white;
-    border: 1px solid #cccccc;
-    margin: 20px;
-    padding: 10px;
-}
-
-/* 4. Banner slika unutar headera */
-.banner img {
-    width: 100%;
-    display: block;
-    border-bottom: 3px solid #ffcc00;
-}
-
-/* 5. Navigacija ispod bannera */
-nav {
-    background-color: #333333;
-    padding: 8px;
-    margin-top: 10px;
-}
-
-/* 6. Lista u navigaciji */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* 7. Stavke liste u navigaciji */
-li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-/* 8. Linkovi u navigaciji */
-a {
-   text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 5px 12px;
-    font-size: 14px;
-}
-
-/* 9. Glavni sadržaj (main) */
-main {
-   background-color: white;
-    border: 1px solid #cccccc;
-    margin: 0 20px 20px 20px;
-    padding: 10px;
-}
-
-/* 10. Tekst u glavnom sadržaju */
-main p {
-    line-height: 1.5;
-}
-
-/* 11. Footer */
-footer {
-    text-align: center;
-font-size: 12px;
-color: #555555;
-margin-bottom: 10px;
-}
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="banner">
-            <img src="C:\Users\dhubak\Downloads\lego_banner.jpg" alt="Lego">
+    <head>
+		<title>Zadatak 12</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			body { margin: 1em; }
+			form { width: 300px; }
+		</style>
+	</head>
+    <body>
+        <form action="adduser.php" method="post">
+         <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your first name..." class="form-control" required>
         </div>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Početna</a></li>
-                <li><a href="#">O nama</a></li>
-                <li><a href="#">Usluge</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <p>Ovdje će ići ostatak sadržaja stranice.</p>
-    </main>
-
-    <footer>
-        &copy; Dorian Hubak
-    </footer>
-</body>
+         <div class="form-group">
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name..." class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Your e-mail..." class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="country" >Country</label>
+            <select id="country" name="country" class="form-control">
+                <option value="">Please Select</option>
+                <option value="HR" selected>Croatia</option>
+                <option value="SRB">Serbia</option>
+                <option value="AU">Austria</option>
+                <option value="DE">Germany</option>
+                <option value="BE">Belgium</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something..." class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-default" value="Send">
+            <input type="reset" class="btn btn-default" value="Reset">
+        </div>
+        </form>
+    </body>
 </html>
