@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja prva stranica – Header</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        }
+        
+        body{font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        }
+        
+        header{
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        .banner img{
+            width: 100%;
+            display: block;
+            border-bottom: 3px solid #ffcc00;
+        }
+        
+        nav{
+            background-color: #333333;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+        
+        main{
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin: 0 20px 20px 20px;
+            padding: 10px;
+        }
+        
+        main p{
+            line-height: 1.5;
+        }
+        
+        footer{
+            text-align: center;
+            font-size: 12px;
+            color: #555555;
+            margin-bottom: 10px;
+        }
+
+        main h1{
+            text-align: left;
+            color: blue;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            background-color: lightyellow;
+            border-left: 4px solid #ffcc00;
+            height: 50px;
+            padding: 10px 15px 17px 10px;
+        }
+
+        main h1 p{
+            font-size: 15px;
+            color: #414040e1;
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        main h2{
+            margin-top: 15px;
+            margin-bottom: 8px;
+            color: #333333;
+            font-size: 20px;
+        }
+
+        main p{
+            line-height: 1.5;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .uvod{
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        #osnovan{
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 8px;
+            margin-bottom: 12px;
+        }
+
+        .vazno{
+            color: green;
+            font-weight: bold;
+        }
+
+        .lego-link{
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border: 1px solid blue;
+            padding: 5px 10px;
+            color: blue;
+            background-color: #ffffff;
+        }
+
+        .lego-slika{
+            width: 300px;
+            border: 1px solid #cccccc;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .lista-tema{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            list-style-type: square;
+        }
+
+        .napomena{
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .raspored{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .raspored caption{
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .raspored th, .raspored td{
+            border: 1px solid #cccccc;
+            padding: 6px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .raspored th{
+            background-color: #fff7cc;
+        }
+
+        .lego-contact{
+            background-color: rgb(239, 249, 255);
+            border: 1px solid #cccccc;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        .lego-form .form-row{
+            margin-bottom: 12px;
+        }
+
+        .form-row label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-row input[type="text"],
+        .form-row input[type="email"],
+        .form-row select,
+        .form-row textarea{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .lego-form input:focus,
+        .lego-form select:focus,
+        .lego-form textarea:focus{
+            border-color: #66afe9;
+            outline-width: 3px; outline-color: #66afe9;
+        }
+
+        .lego-form .form-check-input:checked + label,
+        .lego-form input[type="checkbox"]:checked + label,
+        .lego-form input[type="radio"]:checked + label {
+            font-weight: bold;
+            color: blue;
+        }
+
+        .lego-form input:disabled {
+            background-color: #eeeeee;
+            color: #666666;
+            cursor: not-allowed;
+        }
+
+        .lego-form input:enabled,
+        .lego-form select:enabled,
+        .lego-form textarea:enabled {
+            background-color: #ffffff;
+        }
+
+        .btn-send{
+            display: inline-block;
+        padding: 0.6rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        background-color: #0056b3;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        }
+
+        .btn-send:hover{
+            background-color: #004084;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="banner">
+            <img src="https://github.com/asimec1/CSS_1/blob/main/vjezba_12/lego_banner.jpg?raw=true" alt="Lego">
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Početna</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Usluge</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+            <section class="lego-contact">
+            <h2>Kontaktirajte nas – LEGO podrška</h2>
+            <p>Ako imate pitanje o svom LEGO setu, ispunite kontakt obrazac u nastavku.</p>
+        
+            <form class="lego-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="first-name">Ime *</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Vaše ime..." required>
+                </div>
+        
+                <div class="form-row">
+                    <label for="last-name">Prezime *</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Vaše prezime..." required>
+                </div>
+        
+                <div class="form-row">
+                    <label for="email">Vaš e-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="Vaš e-mail..." required>
+                </div>
+        
+                <div class="form-row">
+                    <label for="country">Država</label>
+                    <select id="country" name="country">
+                        <option value="hrvatska">Hrvatska</option>
+                        <option value="slovenija">Slovenija</option>
+                        <option value="drugo">Drugo</option>
+                    </select>
+                </div>
+        
+                <div class="form-row">
+                    <label for="subject">Poruka</label>
+                    <textarea id="subject" name="subject" rows="5" placeholder="Napišite svoju poruku..."></textarea>
+                </div>
+        
+                <div class="form-row">
+                    <p><strong>Newsletter</strong></p>
+                    <div class="option">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Želim primati LEGO novosti i popuste</label>
+                    </div>
+                </div>
+        
+                <div class="form-row">
+                    <p><strong>Način dostave</strong></p>
+                    <div class="option">
+                        <input type="radio" id="delivery-standard" name="delivery" value="standardna" checked>
+                        <label for="delivery-standard">Standardna dostava</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="delivery-express" name="delivery" value="ekspresna">
+                        <label for="delivery-express">Ekspresna dostava</label>
+                    </div>
+                </div>
+        
+                <div class="form-row">
+                    <label for="promo-code">Promo kod (onemogućeno polje)</label>
+                    <input type="text" id="promo-code" name="promo-code" value="USKORO" disabled>
+                </div>
+        
+                <div class="form-row">
+                    <button type="submit" class="btn-send">Pošalji</button>
+                </div>
+            </form>
+        </section>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        &copy; Dorian Hubak
+    </footer>
+</body>
+</html>
