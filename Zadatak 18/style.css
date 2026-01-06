@@ -1,0 +1,457 @@
+    *{  margin: 0;
+        padding: 0;
+        }
+
+    :root{
+        
+        --color-primary: #0069d9; 
+        --color-primary-dark: #0056b3;
+        --color-primary-darker: #004084;
+        --color-primary-100: #eef6ff;
+
+        --color-secondary: #ffcc00; 
+        --color-secondary-100: #fff7cc;
+        --color-secondary-600: #e0d28a;
+
+        --color-neutral-bg: #ffffff; 
+        --color-page-bg: #f0f0f0; 
+        --color-text: #333333; 
+        --color-muted: rgba(65,64,64,0.88);
+        --color-border: #e6e6e6;
+
+        --color-accent-warn: #d9534f;
+
+        
+        --accent-city: #4682b4; 
+        --accent-technic: #ff8c00; 
+        --accent-friends: #ff1493; 
+    }
+
+         .page {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        
+       body {
+        font-family: "Roboto", Arial, sans-serif;
+        background-color: var(--color-page-bg);
+        color: var(--color-text);
+    }
+
+        .section-header h1,
+       .section-title,
+       .lego-contact h2,
+       .lego-gallery h2,
+       main h1,
+       main h2 {
+           font-family: "Lobster", "Georgia", serif;
+       }
+
+        .section-header{
+            padding: 14px 18px;
+            margin-bottom: 18px;
+            border-width: 2px;
+            border-style: dashed;
+            border-color: var(--color-secondary-600);
+            border-radius: 8px;
+            background-color: var(--color-secondary-100);
+        }
+   
+        header{
+            background-color: var(--color-neutral-bg);
+            border: 1px solid var(--color-border);
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        .banner img{
+            width: 100%;
+            display: block;
+            border-bottom: 3px solid var(--color-secondary);
+        }
+        
+        nav{
+            background-color: #333333;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--color-primary);
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+        
+        .main-nav a{
+            color: #ffffff;
+            border: 1px solid #ffffff;
+        }
+
+        
+        .main-nav a[href="https://www.lego.com"]{
+            color: var(--color-secondary);
+            border-color: var(--color-secondary);
+        }
+        .main-nav a[href="https://www.lego.com"]:hover{
+            background-color: var(--color-secondary);
+            color: var(--color-primary-dark);
+            outline: 2px solid var(--color-neutral-bg);
+        }
+        
+        main{
+            background-color: var(--color-neutral-bg);
+            border: 1px solid var(--color-border);
+            margin: 0 20px 20px 20px;
+            padding: 10px;
+        }
+        
+        main p{
+            line-height: 1.5;
+        }
+        
+        footer{
+            text-align: center;
+            font-size: 12px;
+            color: var(--color-muted);
+            margin-bottom: 10px;
+        }
+
+        main h1{
+            text-align: left;
+            color: var(--color-primary);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            background-color: var(--color-secondary-100);
+            border-left: 4px solid var(--color-secondary);
+            height: 50px;
+            padding: 10px 15px 17px 10px;
+        }
+
+        main h1 p{
+            font-size: 15px;
+            color: var(--color-muted);
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        main h2{
+            margin-top: 15px;
+            margin-bottom: 8px;
+            color: var(--color-text);
+            font-size: 20px;
+        }
+
+        main p{
+            line-height: 1.5;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .uvod{
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        #osnovan {
+           background-color: var(--color-neutral-bg);
+           border-width: 1px;
+           border-style: solid;
+           border-color: var(--color-border);
+           padding: 18px 20px;
+           margin-bottom: 20px;
+           border-radius: 10px;
+           box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+       }
+
+        .vazno{
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+
+     .lego-link {
+         display: inline-block;
+         padding: 10px 20px;
+         margin: 12px 0;
+         border: 2px solid var(--color-primary);
+         border-radius: 8px;
+         background-color: var(--color-neutral-bg);
+         color: var(--color-primary);
+         font-weight: 600;
+         text-align: center;
+         cursor: pointer;
+         box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+         transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+     }
+     .lego-link:hover{
+         background-color: var(--color-primary);
+         color: var(--color-neutral-bg);
+         transform: translateY(-2px);
+         box-shadow: 0 8px 20px rgba(0,64,132,0.18);
+     }
+     .lego-link:active{
+         transform: translateY(0) scale(0.99);
+         box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+     }
+     .lego-link:focus{
+         outline: 3px solid rgba(0,105,217,0.24);
+         outline-offset: 3px;
+     }
+        .image-box{
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-neutral-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .image-box .lego-slika{
+            width: 300px;
+            display: block;
+            border: none;
+            margin: 0;
+            border-radius: 6px;
+            max-width: 100%;
+        }
+
+        .lego-slika{
+            width: 300px;
+            display: block;
+            border: 1px solid var(--color-border);
+            margin: 10px 0;
+            border-radius: 6px;
+            max-width: 100%;
+        }
+
+        .lista-tema{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            list-style-type: square;
+        }
+
+        .napomena{
+            color: var(--color-accent-warn);
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .raspored{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            border: 2px solid var(--color-border);
+        }
+
+        .raspored caption{
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .raspored th, .raspored td{
+            border: 1px dotted var(--color-border);
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .raspored th{
+            background-color: var(--color-secondary-100);
+            border-bottom: 2px solid var(--color-secondary-600);
+        }
+
+        .lego-contact{
+            background-color: var(--color-primary-100);
+            border: 1px solid var(--color-border);
+            padding: 15px;
+            margin: 20px;
+        }
+
+        .lego-form .form-row{
+            margin-bottom: 12px;
+        }
+
+        .form-row label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-row input[type="text"],
+        .form-row input[type="email"],
+        .form-row select,
+        .form-row textarea{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .lego-form input:focus,
+        .lego-form select:focus,
+        .lego-form textarea:focus{
+            border-color: var(--color-primary);
+            outline-width: 3px; outline-color: var(--color-primary);
+        }
+
+        .lego-form .form-check-input:checked + label,
+        .lego-form input[type="checkbox"]:checked + label,
+        .lego-form input[type="radio"]:checked + label {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+
+        .lego-form input:disabled {
+            background-color: var(--color-border);
+            color: var(--color-muted);
+            cursor: not-allowed;
+        }
+
+        .lego-form input:enabled,
+        .lego-form select:enabled,
+        .lego-form textarea:enabled {
+            background-color: var(--color-neutral-bg);
+        }
+
+        .btn-send{
+            display: inline-block;
+        padding: 0.6rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color-primary-dark);
+        color: var(--color-neutral-bg);
+        font-weight: 600;
+        cursor: pointer;
+        }
+
+        .btn-send:hover{
+            background-color: var(--color-primary-darker);
+        }
+
+        .main-nav a:hover{
+            background-color: #555555;
+            outline: 2px solid #ffffff;
+        }
+
+        .main-nav a:focus{
+            outline: 2px solid #ffffff;
+        }
+
+        .main-nav a:active{
+            transform: scale(0.97); 
+        }
+
+        .gallery-row{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .gallery-row img{
+            width: 30%;
+            border-width: 6px;
+            border-style: solid;
+            border-color: var(--color-border);
+            padding: 8px;
+            background-color: var(--color-neutral-bg);
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+        }
+         .lego-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+            cursor: pointer;
+         }
+/* ============================
+   GALERIJA SLIKA – VJEŽBA 18
+   ============================ */
+
+/* 1) Kontejner galerije – širina, margine, padding, pozadina, border, shadow */
+.lego-gallery {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 20px;
+    background-color: var(--color-primary-100);
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.lego-gallery h2 {
+    margin: 0 0 10px 0;
+    color: var(--color-primary);
+    font-size: 22px;
+}
+
+.lego-gallery p {
+    margin: 0 0 18px 0;
+    color: var(--color-muted);
+    font-size: 15px;
+}
+
+/* 2) GRID raspored – display: grid, broj stupaca, razmak (gap) */
+.lego-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+/* 3) Svaki LEGO set kao "kartica" – pozadina, border, radius, flex kolona, transition */
+.gallery-item {
+    background-color: var(--color-neutral-bg);
+    border: 5px solid var(--color-border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.18s ease;
+}
+
+/* Slika – širina 100%, block element */
+.gallery-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Tekst ispod slike – padding, veličina fonta, centriranje */
+.gallery-item figcaption {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+/* 4) Selektori atributa – različita boja okvira za tip seta (city, technic, friends) */
+.gallery-item[data-set="city"] { border-color: var(--accent-city); }
+
+.gallery-item[data-set="technic"] { border-color: var(--accent-technic); }
+
+.gallery-item[data-set="friends"] { border-color: var(--accent-friends); }
+/* 5) Hover efekt – blagi pomak, sjena, promjena boje ruba */
+.gallery-item:hover,
+.gallery-item:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+    border-color: var(--color-primary);
+}
